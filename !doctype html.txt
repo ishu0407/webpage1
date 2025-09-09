@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E. Ishwariya — Student Profile</title>
+  <style>
+    :root{ --bg:#f6f8fb; --card:#ffffff; --accent:#4f46e5; --muted:#6b7280; --radius:12px; }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,var(--bg),#ffffff); color:#111;font-size:16px;}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:140px;height:140px;border-radius:16px;background:linear-gradient(135deg,#eef2ff,#e0f2fe);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:20px}
+    h1{margin:0;font-size:28px}
+    .sub{color:var(--muted);margin-top:6px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 20px rgba(16,24,40,0.06);padding:20px;margin-top:20px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .bio p{line-height:1.6;color:#111}
+    .info-list{list-style:none;padding:0;margin:0}
+    .info-list li{padding:10px 0;border-bottom:1px dashed #eef2ff;color:var(--muted)}
+    .education{display:flex;flex-direction:column;gap:12px}
+    .edu-item{padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid #f1f5f9}
+    .edu-item h4{margin:0 0 6px 0}
+    .cta{display:flex;gap:10px;margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-secondary{background:#eef2ff;color:var(--accent);border:1px solid rgba(79,70,229,0.08)}
+    footer{margin-top:28px;color:var(--muted);font-size:14px;text-align:center}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:110px;height:110px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden="true">EI</div>
+      <div>
+        <h1>E. Ishwariya</h1>
+        <div class="sub">Student — Karan Arts and Science College, Thiruvannamalal</div>
+        <div class="sub">Course progression: 1st BCA → 2nd BCA</div>
+      </div>
+    </header>
+
+    <section class="card grid" aria-labelledby="about-heading">
+      <main>
+        <h2 id="about-heading">About</h2>
+        <div class="bio">
+          <p>
+            E. Ishwariya is a Bachelor of Computer Applications (BCA) student at Karan Arts and Science College, located in Thiruvannamalal. The profile highlights the academic progression from 1st BCA to 2nd BCA, involvement in campus activities, and a focus on building fundamental programming and computing skills.
+          </p>
+          <p>
+            This page is structured to present personal details, education timeline, skills, and contact information in a clean, responsive layout suitable for sharing with classmates, instructors, or potential internship coordinators.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3 style="margin-top:0">Skills & Interests</h3>
+          <ul style="display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:8px 0 0 0;list-style:none">
+            <li style="background:#f8fafc;padding:8px 10px;border-radius:8px;color:var(--muted)">Programming fundamentals</li>
+            <li style="background:#f8fafc;padding:8px 10px;border-radius:8px;color:var(--muted)">Web development basics</li>
+            <li style="background:#f8fafc;padding:8px 10px;border-radius:8px;color:var(--muted)">Database concepts</li>
+            <li style="background:#f8fafc;padding:8px 10px;border-radius:8px;color:var(--muted)">Problem solving</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3 style="margin-top:0">Achievements & Activities</h3>
+          <ul>
+            <li>Active participant in college coding clubs and workshops.</li>
+            <li>Completed small projects and assignments in web design and database management.</li>
+            <li>Attended seminars and guest lectures on IT and software development.</li>
+          </ul>
+        </div>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Quick Info</h3>
+          <ul class="info-list">
+            <li><strong>Name:</strong> E. Ishwariya</li>
+            <li><strong>College:</strong> Karan Arts and Science College</li>
+            <li><strong>Location:</strong> Thiruvannamalal</li>
+            <li><strong>Course:</strong> BCA (1st → 2nd)</li>
+          </ul>
+
+          <div style="margin-top:12px">
+            <h4 style="margin:0 0 8px 0">Education Timeline</h4>
+            <div class="education">
+              <div class="edu-item">
+                <h4>1st BCA</h4>
+                <div class="muted">Foundation in programming, mathematics for computing, and basic web technologies.</div>
+              </div>
+              <div class="edu-item">
+                <h4>2nd BCA</h4>
+                <div class="muted">Advanced topics such as databases, object-oriented programming, and applied web development.</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="cta">
+              <a class="btn btn-primary" href="#contact" role="button">Contact</a>
+              <a class="btn btn-secondary" href="#" role="button" aria-disabled="true">Download CV</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 style="margin-top:0">Contact</h3>
+          <p class="sub">Add your contact details here so people can reach out for collaborations or internships.</p>
+          <form id="contact" onsubmit="event.preventDefault();alert('This is a demo form. Replace with your contact details.');">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label style="font-size:13px;color:var(--muted)">Email</label>
+              <input placeholder="yourname@example.com" style="padding:10px;border-radius:8px;border:1px solid #e6edf3">
+              <label style="font-size:13px;color:var(--muted)">Message</label>
+              <textarea placeholder="Hi, I'd like to connect..." style="padding:10px;border-radius:8px;border:1px solid #e6edf3;min-height:80px"></textarea>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+
+      </aside>
+    </section>
+
+    <footer>
+      Created for <strong>E. Ishwariya</strong> — Karan Arts and Science College, Thiruvannamalal. Want changes? Tell me what to update (photo, contact, or text).
+    </footer>
+  </div>
+</body>
+</html>
